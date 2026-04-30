@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Cadastro de Clientes</h1>
+
+<input id="nome" placeholder="Nome">
+
+<select id="tipo" id="tipo">
+    <option value="PF">PF</option>
+    <option value="PJ">PJ</option>
+</select>
+
+<input id="documento" placeholder="CPF">
+
+<input id="whatsapp" placeholder="WhatsApp">
+<input id="email" placeholder="Email">
+<input id="cidade" placeholder="Cidade">
+<input id="estado" placeholder="Estado">
+
+<button id="btnCadastrar">Cadastrar</button>
+
+<h2>Filtros</h2>
+
+<select id="filtroTipo">
+    <option value="">Todos</option>
+    <option value="PF">PF</option>
+    <option value="PJ">PJ</option>
+</select>
+
+<input id="filtroCidade" placeholder="Cidade">
+<input id="filtroEstado" placeholder="Estado">
+
+<button id="btnFiltrar">Filtrar</button>
+
+<h2>Lista</h2>
+<ul id="lista"></ul>
+
+<script src="js/model/Cliente.js"></script>
+<script src="js/controller/ClienteController.js"></script>
+<script src="js/view/app.js"></script>
+
+</body>
+</html>
